@@ -9,6 +9,8 @@ const sensorDataRoutes = require('./routes/sensordataRoutes');
 
 const storedDataRoutes = require('./routes/storeddataRoutes');
 app.use(cors());
+app.use((req, res) => {
+    res.header('Access-Control-Allow-Origin', 'https://livepowerfrontend.onrender.com');})
 app.use(bodyParser.json());
 app.use('/api', sensorDataRoutes);
 app.use("/stored",storedDataRoutes);
