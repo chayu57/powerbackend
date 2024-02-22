@@ -24,7 +24,7 @@ const storeddataSchema = new Schema({
         required: true
     },
     onoff: {
-        type: Schema.Types.String, // Use Schema.Types.String instead of mongoose.Schema.Types.String
+        type: Schema.Types.Number, // Use Schema.Types.String instead of mongoose.Schema.Types.String
         required: true
     }
 }, {

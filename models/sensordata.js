@@ -26,7 +26,7 @@ const sensordataSchema = new Schema(
             required:true
         },
         onoff:{
-            type: mongoose.Schema.Types.String,
+            type: mongoose.Schema.Types.Number,
             required:true
         }
     },
